@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <style>
+        .navbar {
+            background-color: rgb(104, 104, 247);
+            display: flex;
+
+        }
+
+        .links {
+            display: flex;
+
+        }
+
+
+        .sidebar {
+            background-color: rgb(235, 233, 233);
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+
+        .open .navbar {
+            width: 75%;
+            margin-left: 25%;
+            transition: margin 1.3s ease-in-out .0s, width 1.3s ease-in-out .0s;
+        }
+
+        .open .sidebar {
+            width: 25%;
+            transition: width 1.3s ease-in-out .0s, margin 1.3s ease-in-out .0s;
+        }
+
+        .close .navbar {
+            width: 100%;
+
+        }
+
+        .close .sidebar {
+            width: 25;
+            display: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper" class="close">
+
+        <header>
+            <nav class="navbar">
+                <li class="links">
+                    <div>
+                        <i id="bars" class="fas fa-bars fa-3x"></i>
+
+
+                    </div>
+                    <h2>Store</h2>
+                    <h2>Ecosystem</h2>
+                    <h2>Support</h2>
+
+                </li>
+
+            </nav>
+
+
+        </header>
+
+        <div>
+            <li class="sidebar">
+                <h3>Getting Started</h3>
+                <h3>Why Veutify</h3>
+                <h3>Frequently asked qeustions?</h3>
+                <h3>Sponsors and backers</h3>
+                <h3>Contributing</h3>
+                <h3>Road Map</h3>
+            </li>
+
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
